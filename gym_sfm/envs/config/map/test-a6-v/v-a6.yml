@@ -1,0 +1,57 @@
+size:
+  width: 4
+  height: 6
+  scale: 0.5
+zones:
+  - name: ag1
+    target_zone_name: ag2
+    pose: [2,5.5]
+    shape: [0,0.5]
+    width: 0.5
+  - name: ag2
+    target_zone_name: ag1
+    pose: [2,0]
+    shape: [0,0.5]
+    width: 0.5
+  - name: ac3
+    target_zone_name: ac4
+    pose: [1,4.5]
+    shape: [0,0.5]
+    width: 0.5
+  - name: ac4
+    target_zone_name: ac3
+    pose: [1,1]
+    shape: [0,0.5]
+    width: 0.5
+  - name: ac5
+    target_zone_name: ac6
+    pose: [2,4.5]
+    shape: [0,0.5]
+    width: 0.5
+  - name: ac6
+    target_zone_name: ac5
+    pose: [2,1]
+    shape: [0,0.5]
+    width: 0.5
+  - name: ac7
+    target_zone_name: ac8
+    pose: [3,4.5]
+    shape: [0,0.5]
+    width: 0.5
+  - name: ac8
+    target_zone_name: ac7
+    pose: [3,1]
+    shape: [0,0.5]
+    width: 0.5
+viewer:
+  show_nodes: false
+  show_zones: true
+  show_walls_mean: false
+  show_walls_vertices: false
+actor:
+  config_rel_path: train/1.yml
+  max_actor_num: 10
+  convergence_radius: 1.0
+agent:
+  config_rel_path: for_old_method.yml
+  max_agent_num: 1

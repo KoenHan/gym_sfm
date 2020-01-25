@@ -1,0 +1,84 @@
+size:
+  width: 5.2
+  height: 6
+  scale: 0.5
+walls:
+  - name: wall1
+    pose: [-0.1,-0.1]
+    shape:
+      - [0,6.2]
+      - [5.4,0]
+      - [0,-6.2]
+      - [-5.4,0]
+    width: 0.1
+zones:
+  - name: ag1
+    target_zone_name: ag2
+    pose: [2.6,5.6]
+    shape: [0,0.4]
+    width: 8
+  - name: ag2
+    target_zone_name: ag1
+    pose: [2.6,0]
+    shape: [0,0.4]
+    width: 8
+  - name: ac1
+    pose: [0.5,4.6]
+    shape: [0,1]
+    width: 1
+  - name: ac2
+    pose: [1.9,4.6]
+    shape: [0,1]
+    width: 1
+  - name: ac3
+    pose: [3.3,4.6]
+    shape: [0,1]
+    width: 1
+  - name: ac4
+    pose: [4.7,4.6]
+    shape: [0,1]
+    width: 1
+  - name: ac5
+    pose: [4.7,3.2]
+    shape: [0,1]
+    width: 1
+  - name: ac6
+    pose: [4.7,1.8]
+    shape: [0,1]
+    width: 1
+  - name: ac7
+    pose: [4.7,0.4]
+    shape: [0,1]
+    width: 1
+  - name: ac8
+    pose: [3.3,0.4]
+    shape: [0,1]
+    width: 1
+  - name: ac9
+    pose: [1.9,0.4]
+    shape: [0,1]
+    width: 1
+  - name: ac10
+    pose: [0.5,0.4]
+    shape: [0,1]
+    width: 1
+  - name: ac11
+    pose: [0.5,1.8]
+    shape: [0,1]
+    width: 1
+  - name: ac12
+    pose: [0.5,3.2]
+    shape: [0,1]
+    width: 1
+viewer:
+  show_nodes: false
+  show_zones: false
+  show_walls_mean: false
+  show_walls_vertices: false
+actor:
+  config_rel_path: train/1.yml
+  max_actor_num: 12
+  convergence_radius: 1.0
+agent:
+  config_rel_path: for_old_method.yml
+  max_agent_num: 1

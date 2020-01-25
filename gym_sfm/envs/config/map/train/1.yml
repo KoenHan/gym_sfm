@@ -1,0 +1,93 @@
+size:
+  width: 20
+  height: 20
+  scale: 0.8
+walls:
+  - name: wall1
+    pose: [0.5,11]
+    shape: [0,9]
+    width: 1
+  - name: wall2
+    pose: [0.5,0]
+    shape: [0,9]
+    width: 1
+  - name: wall3
+    pose: [3,1.5]
+    shape: [9,0]
+    width: 3
+  - name: wall4
+    pose: [14,1.5]
+    shape: [6,0]
+    width: 3
+  - name: wall5
+    pose: [19.5,5]
+    shape: [0,15]
+    width: 1
+  - name: wall6
+    pose: [10,18.5]
+    shape: [5,0]
+    width: 3
+  - name: wall7
+    pose: [3,13]
+    shape: [14,0]
+    width: 4
+  - name: wall8
+    pose: [3,7]
+    shape: [14,0]
+    width: 4
+nodes:
+  - name: node1
+    pose: [2,10]
+  - name: node2
+    pose: [2,4]
+  - name: node3
+    pose: [13,4]
+  - name: node4
+    pose: [18,4]
+  - name: node5
+    pose: [18,10]
+  - name: node6
+    pose: [18,16]
+  - name: node7
+    pose: [16,16]
+  - name: node8
+    pose: [9,16]
+  - name: node9
+    pose: [2,16]
+zones:
+  - name: zone1
+    pose: [0.5,9]
+    shape: [0,2]
+    width: 1
+  - name: zone2
+    pose: [1,0.5]
+    shape: [2,0]
+    width: 1
+  - name: zone3
+    pose: [12,0.5]
+    shape: [2,0]
+    width: 1
+  - name: zone4
+    pose: [19.5,3]
+    shape: [0,2]
+    width: 1
+  - name: zone5
+    pose: [15,19.5]
+    shape: [4,0]
+    width: 1
+  - name: zone6
+    pose: [1,19.5]
+    shape: [9,0]
+    width: 1
+viewer:
+  show_nodes: false
+  show_zones: false
+  show_walls_mean: false
+  show_walls_vertices: false
+actor:
+  config_rel_path: train/1.yml
+  max_actor_num: 10
+  convergence_radius: 1.0
+agent:
+  config_rel_path: default.yml
+  max_agent_num: 1

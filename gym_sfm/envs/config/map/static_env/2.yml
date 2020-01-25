@@ -1,0 +1,25 @@
+size:
+  width: 5
+  height: 5
+  scale: 0.5
+zones:
+  - name: ag1
+    pose: [2.5,1.9]
+    shape: [0,0.5]
+    width: 1
+  - name: ag2
+    pose: [2.5,2.6]
+    shape: [0,0.5]
+    width: 1
+viewer:
+  show_nodes: false
+  show_zones: false
+  show_walls_mean: false
+  show_walls_vertices: false
+actor:
+  config_rel_path: train/1.yml
+  max_actor_num: 0
+  convergence_radius: 1.0
+agent:
+  config_rel_path: default.yml
+  max_agent_num: 1

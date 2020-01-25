@@ -1,0 +1,136 @@
+size:
+  width: 30
+  height: 20
+  scale: 0.75
+walls:
+  - name: wall1
+    pose: [1.5,20]
+    shape: [0,-6]
+    width: 3
+  - name: wall2
+    pose: [7,1.5]
+    shape:
+      - [-5.5,0]
+      - [0,8]
+      - [3.3,0]
+    width: 3
+  - name: wall3
+    pose: [9.5,0]
+    shape: [0,11.8]
+    width: 5
+  - name: wall4
+    pose: [16.5,3]
+    shape: [0,4.6]
+    width: 5
+  - name: wall5
+    pose: [30,0]
+    shape:
+      - [0,8.9]
+      - [-2.9,0]
+      - [-4,-3.4]
+      - [0,-2.6]
+      - [-2,0]
+      - [0,-2.9]
+      - [8.9,0]
+    width: 0.2
+  - name: wall6
+    pose: [22.7,15.1]
+    shape: [4.5,-3.17]
+    width: 2.6
+  - name: wall7
+    pose: [30,20]
+    shape:
+      - [-10.9,0]
+      - [0,-2.9]
+      - [2.6,0]
+      - [1.4,1.97]
+      - [7,-4.97]
+      - [0,5.9]
+    width: 0.2
+  - name: wall8
+    pose: [17.5,20]
+    shape: [0,-3.8]
+    width: 3
+  - name: wall9
+    pose: [14,18.5]
+    shape:
+      - [-9.5,0]
+      - [0,-4.5]
+    width: 3
+  - name: wall10
+    pose: [15,14.2]
+    shape:
+      - [0,-4.6]
+      - [6,0]
+      - [0,2.6]
+      - [-2.81,2]
+      - [-3.19,0]
+    width: 0.2
+nodes:
+  - name: node1
+    pose: [6,7]
+  - name: node2-1
+    pose: [5.8,12.5]
+  - name: node2-2
+    pose: [8,13]
+  - name: node3
+    pose: [13,13]
+  - name: node4
+    pose: [13,8.6]
+  - name: node5
+    pose: [13,2]
+  - name: node6
+    pose: [20,2]
+  - name: node7
+    pose: [20,8.6]
+  - name: node8-1
+    pose: [22.5,12]
+  - name: node8-2
+    pose: [23,7]
+  - name: node8-3
+    pose: [26,9.5]
+  - name: node9
+    pose: [23.286,17.475]
+  - name: node10
+    pose: [20.3,15.2]
+  - name: node11-1
+    pose: [13.5,15]
+  - name: node11-2
+    pose: [15,15.7]
+zones:
+  - name: zone1
+    pose: [0,12.5]
+    shape: [1,0]
+    width: 3
+  - name: zone2
+    pose: [3,5.5]
+    shape: [1,0]
+    width: 5
+  - name: zone3
+    pose: [16.5,0]
+    shape: [0,1]
+    width: 9
+  - name: zone4-1
+    pose: [30,13]
+    shape: [-1,0]
+    width: 2
+  - name: zone4-2
+    pose: [30,10]
+    shape: [-2.5,0]
+    width: 2
+  - name: zone5
+    pose: [15,20]
+    shape: [0,-1]
+    width: 2
+viewer:
+  show_nodes: false
+  show_zones: false
+  show_walls_mean: false
+  show_walls_vertices: false
+actor:
+  config_rel_path: train/3.yml
+  max_actor_num: 10
+  convergence_radius: 1.0
+agent:
+  config_rel_path: default.yml
+  max_agent_num: 1

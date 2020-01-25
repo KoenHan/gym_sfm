@@ -1,0 +1,15 @@
+agent:
+  v: 3.0      # [m/s]
+  omega: 0.0  # [rad/s]
+
+  max_v: 3.0      # [m/s]
+  min_v: 0.0      # [m/s]
+  max_omega: 3.0  # [rad/s]
+
+  name: agent
+  color: [0, 0, 255]        # RGB
+  mass: 60                  # [kg]
+  radius: 0.25              # [m]
+  lidar_linear_range: 30.0  # [m]
+  lidar_rad_range: 180.0    # [deg]
+  lidar_rad_step: 3.0       # [deg]

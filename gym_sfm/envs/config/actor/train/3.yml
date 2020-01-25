@@ -1,0 +1,41 @@
+actor:
+  # init
+  yaw: 0.0
+  optimal_v: 1.2
+  # restriction
+  max_v: 1.7
+  max_a: 1.2
+  # factor
+  mass: 60.0
+  radius: 0.25
+  Fac_A: 400.0
+  Fac_B: 0.9
+  F_avoid: 7.0
+  Fw_A: 250.0
+  Fw_B: 1.2
+  consider_actor_radius: 5.0
+  consider_actor_theta: 90
+  must_avoid_radius: 1.0
+  consider_wall_radius: 2.0
+  tau: 0.5
+  k: 1.0
+  kappa: 1.0
+  sigma:
+    mass: 1.0
+    Fac_A: 1.0
+    Fac_B: 0.02
+    Fw_A: 20.0
+    Fw_B: 0.05
+    tau: 0.05
+    k: 0.1
+    kappa: 0.1
+viewer:
+  show_v: false
+  show_goal: false
+  show_F_walls: true
+  show_F_actors: true
+  show_F_target: true
+  show_to_goal_vec: false
+  show_actor_color: true
+  show_affected_walls: false
+  show_consider_radius: false
