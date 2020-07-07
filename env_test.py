@@ -8,10 +8,10 @@ import gym
 import gym_sfm.envs.env as envs
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--map', help='Specify map setting folder.', default='train')
-parser.add_argument('-tl', '--time_limit', help='Specify env time limit(sec).', type=int, default=60)
-parser.add_argument('-mt', '--max_t', type=int, default=10)
-parser.add_argument('-mepi', '--max_episodes', type=int, default=3)
+parser.add_argument('--map', help='Specify map setting folder.', default='demo')
+parser.add_argument('-tl', '--time_limit', help='Specify env time limit(sec).', type=int, default=1800)
+parser.add_argument('-mt', '--max_t', type=int, default=1800)
+parser.add_argument('-mepi', '--max_episodes', type=int, default=5)
 args = parser.parse_args()
 
 env = gym.make('gym_sfm-v0', md=args.map, tl=args.time_limit)

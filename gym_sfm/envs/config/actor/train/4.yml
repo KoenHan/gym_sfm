@@ -31,10 +31,10 @@ actor:
     kappa: 0.1
 viewer:
   show_v: false
-  show_goal: false
-  show_F_walls: true
-  show_F_actors: true
-  show_F_target: true
+  show_goal: true
+  show_F_walls: false
+  show_F_actors: false
+  show_F_target: false
   show_to_goal_vec: false
   show_actor_color: true
   show_affected_walls: false
